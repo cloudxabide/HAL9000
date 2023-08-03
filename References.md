@@ -1,7 +1,9 @@
 # References
 
+## AWS: Data on EKS (DoEKS)
+https://awslabs.github.io/data-on-eks/
 
-## Doc Resources
+## Coursera: Generative AI with Large Language Models
 Source: https://www.coursera.org/learn/generative-ai-with-llms/supplement/kRX5c/week-1-resources
 
 ### Transformer Architecture
