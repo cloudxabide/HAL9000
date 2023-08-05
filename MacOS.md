@@ -2,6 +2,8 @@
 
 
 Exploring options for running AI Workloads on my M2 Mac
+Docker with Linux can be tricky, but working with Docker + MacOS is proving rather tricky, and fairly annoying.  (Bind mounts are my current struggle.  Not a fan of having to run Docker Desktop, instead of just plain ol' Docker.  Ugh)
+
 
 ```
 mkdir ${HOME}/work
@@ -22,5 +24,11 @@ NOTES:
 * To get the IP of your container, run docker ps to get the container id.  Then 
 ``` 
 docker inspect <containerID> | grep IPAddress
+docker rm $(docker ps -a | grep Exit | awk '{ print $1 }')
 ``` 
 
+
+```
+cd ${HOME}/Docker
+docker container run --name jupyter -p 8888:8888 -v $(pwd):/home/joyvan/work/ jupyter/base-notebook
+```
