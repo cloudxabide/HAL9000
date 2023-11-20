@@ -28,6 +28,7 @@ docker rm $(docker ps -a | grep Exit | awk '{ print $1 }')
 ``` 
 
 
+This would appear like a logical approach.  It fails to address the fact that Docker does not actually run on MacOS, and instead runs a Virtual Machine.  I'm not a fan at this point - as I cannot figure how Docker intended you to interact, directly, with the filesystem.  I will admit tht my use-case may be unorthodox - I want to have Jupyter running (in Docker) and manipulate files via my MacOS Terminal.  Meh?
 ```
 cd ${HOME}/Docker
 docker container run --name jupyter -p 8888:8888 -v $(pwd):/home/joyvan/work/ jupyter/base-notebook
