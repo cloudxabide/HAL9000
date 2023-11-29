@@ -1,5 +1,7 @@
 # Ollama
 
+
+```
 ## Install Supporting Bits (NVIDIA)
 curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey \
     | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
@@ -53,3 +55,4 @@ docker rm $(docker ps -a | awk '{ print $1 }' | grep -v CONTAINER)
 ## References
 https://ollama.ai/ => https://github.com/jmorganca/ollama
 https://hub.docker.com/r/ollama/ollama
+```
