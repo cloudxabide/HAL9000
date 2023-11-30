@@ -17,7 +17,7 @@ sudo apt-get install -y nvidia-container-toolkit
 
 #docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 OLLAMA_ENV_FILE=${HOME}/ollama-env-file.txt
-echo "OLLAMA_ORIGINS=http://10.10.10.20:*,http://hal-9000.linuxrevolution.com:*" > $OLLAMA_ENV_FILE
+echo "OLLAMA_ORIGINS=\"http://10.10.10.20:*,http://hal9000.linuxrevolution.com:*\"" > $OLLAMA_ENV_FILE
 docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --env-file=$OLLAMA_ENV_FILE --name ollama ollama/ollama
 
 # CLI interface
@@ -32,6 +32,7 @@ exit 0
 # https://github.com/ollama-webui/ollama-webui
 #docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
 docker run -d -p 3000:8080 -e OLLAMA_API_BASE_URL=http://10.10.10.20:11434/api --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
+docker run -d -p 8000:8080 -e OLLAMA_API_BASE_URL=http://hal9000.linuxrevolution.com:11434/api --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
 
 cd
 git clone https://github.com/ollama-ui/ollama-ui

@@ -20,7 +20,7 @@ case $(dmidecode  -s baseboard-product-name) in
     MYHOSTNAME="slippy" 
   ;;
   'ROG STRIX Z490-E GAMING')
-    MYHOSTNAME="hal-9000" 
+    MYHOSTNAME="hal9000" 
   ;;
 esac
 echo "$MYHOSTNAME" | sudo tee /etc/hostname
