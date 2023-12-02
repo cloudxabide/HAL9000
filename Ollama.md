@@ -28,7 +28,7 @@ exit 0
 ###### ######
 #  Random TESTING FOLLOWS...
 ###### ######
-# OLLaMa
+# OLLaMa WebUI
 # https://github.com/ollama-webui/ollama-webui
 #docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
 docker run -d -p 3000:8080 -e OLLAMA_API_BASE_URL=http://10.10.10.20:11434/api --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
