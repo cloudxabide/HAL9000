@@ -25,7 +25,8 @@ echo "OLLAMA_ORIGINS=\"http://10.10.10.20:*,http://hal9000.matrix.lab:*\"" > $OL
 docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --env-file=$OLLAMA_ENV_FILE --name ollama ollama/ollama
 ```
 
-## UIs to utilize the LLM
+## User-Interfaces to utilize the LLM
+
 ### CLI interface
 You can run your prompt in the ollam container itself
 ```
