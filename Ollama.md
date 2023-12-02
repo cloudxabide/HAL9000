@@ -31,8 +31,9 @@ exit 0
 # OLLaMa WebUI
 # https://github.com/ollama-webui/ollama-webui
 #docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
-docker run -d -p 3000:8080 -e OLLAMA_API_BASE_URL=http://10.10.10.20:11434/api --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
-docker run -d -p 3000:8080  --env-file=$OLLAMA_ENV_FILE  --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
+## Ubuntu
+docker run -d -p 3000:8080 --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
+# MacOS 
 docker run -it --platform linux/amd64 -d -p 3000:8080 -e OLLAMA_API_BASE_URL=http://10.10.10.20:11434/api --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
 
 cd
