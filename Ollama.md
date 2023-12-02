@@ -58,4 +58,3 @@ docker rm $(docker ps -a | awk '{ print $1 }' | grep -v CONTAINER)
 ## References
 https://ollama.ai/ => https://github.com/jmorganca/ollama
 https://hub.docker.com/r/ollama/ollama
-``
