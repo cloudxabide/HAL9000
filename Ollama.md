@@ -79,5 +79,5 @@ docker logs -f <docker id>
 ```
 
 ## References
-https://ollama.ai/ => https://github.com/jmorganca/ollama
+https://ollama.ai/ => https://github.com/jmorganca/ollama  
 https://hub.docker.com/r/ollama/ollama
