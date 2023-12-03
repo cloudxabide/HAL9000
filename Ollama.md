@@ -64,10 +64,10 @@ curl http://10.10.10.20:11434/api/generate -d '{
 ```
 
 ### Kill/Remove the pods
+NOTE: This will kill and rm #ALL# containers on your node. (which is fine for me - as this will be the only thing I am working on)
 ```
 docker kill $(docker ps -a | awk '{ print $1 }' | grep -v CONTAINER)
 docker rm $(docker ps -a | awk '{ print $1 }' | grep -v CONTAINER)
-
 ```
 
 ## Notes and troublshooting
