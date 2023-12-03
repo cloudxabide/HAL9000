@@ -44,6 +44,7 @@ docker run -it --platform linux/amd64 -d -p 3000:8080 -e OLLAMA_API_BASE_URL=htt
 ```
 
 ### Ollama-UI (local server)
+NOTE:  I continued to have "CORS issues" which I am fairly aggravated by. (the output is somewhat ambiguous as to what component actually needs updating.  I'll revisit this project at some point - but, for now I am going to use something else.
 ```
 cd
 git clone https://github.com/ollama-ui/ollama-ui
