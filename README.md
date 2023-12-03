@@ -4,11 +4,19 @@ My journey with AI involves many different facets.  I called the repo ["HAL9000"
 
 My objectives are typically focused on the "how" to run an LLM, and less on "what" to do with the LLM, at this time.  I will look at how doing this on my own hardware, etc.. compares to using a managed service.  (This is not a fair comparison, as I will be looking at one aspect of a complete ecosystem  - running a model or three vs. Amazon Sagemaker, Bedrock, EMR, PartyRock, etc...)
 
+My Goals: 
+
 * Cost-Optimization
 * Infrastructure
 * Machine Learning Operations (MLOps)
 * Data Engineering 
 * Data Science (something I have experience with, but will have to become more familiar)
+
+Best Value and Ease of Onboarding/Enablement, in order:  
+
+* Cloud managed service
+* Containers on bare metal with a mid-grade Graphics card (NVIDIA 4060 Ti was $599 and has 16GB of memory
+* Application(s) installed on Bare Metal.  
 
 ## Ollama
 The following doc on my [Ollama Experience](./Ollama.md) details some of my experience runnign Ollama using Docker and the technical implementation steps.  
