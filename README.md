@@ -11,7 +11,7 @@ My objectives are typically focused on the "how" to run an LLM, and less on "wha
 * Data Science (something I have experience with, but will have to become more familiar)
 
 ## Ollama
-The following doc on [Ollama](./Ollama.md) details some of my experience runnign Ollama using Docker and the technical implementation steps.  
+The following doc on my [Ollama Experience](./Ollama.md) details some of my experience runnign Ollama using Docker and the technical implementation steps.  
 
 The following are references I had used:  
 [Ollama](https://ollama.ai/)  
