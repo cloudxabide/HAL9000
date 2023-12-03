@@ -19,7 +19,7 @@ sudo apt-get install -y nvidia-container-toolkit
 ```
 ## Run the Ollama Server in a Docker Container
 ```
-#docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+# docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 OLLAMA_ENV_FILE=${HOME}/ollama-env-file.txt
 echo "OLLAMA_ORIGINS=\"http://10.10.10.20:*,http://hal9000.matrix.lab:*\"" > $OLLAMA_ENV_FILE
 docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --env-file=$OLLAMA_ENV_FILE --name ollama ollama/ollama
@@ -36,7 +36,7 @@ docker exec -it ollama ollama run llama2
 ### Ollama-webUI (container)
 Source: https://github.com/ollama-webui/ollama-webui
 ```
-#docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
+# docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
 ## Ubuntu
 docker run -d -p 3000:8080 --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
 # MacOS 
