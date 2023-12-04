@@ -1,7 +1,6 @@
 # Ollama Experience
 
-Generally if I am trying to learn something, I find myself trending towards using containers rather than installing "bits" in a VM.     
-
+These days, when I am trying to learn something, I find myself trending towards using containers rather than building a VM (or Baremetal in this case) and then installing "bits" in a VM.
 
 ## Install Supporting Bits (NVIDIA)
 ```
