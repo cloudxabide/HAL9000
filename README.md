@@ -15,11 +15,11 @@ My Goals:
 Best Value and Ease of Onboarding/Enablement, in order:  
 
 * Cloud managed service
-* Containers on bare metal with a mid-grade Graphics card (NVIDIA 4060 Ti was $599 and has 16GB of memory
+* Containers on bare metal with a mid-grade Graphics card (NVIDIA 4060 Ti was $599 and has 16GB of memory/VRAM)
 * Application(s) installed on Bare Metal.  
 
 ## Ollama
-The following doc on my [Ollama Experience](./Ollama.md) details some of my experience runnign Ollama using Docker and the technical implementation steps.  
+My [Ollama Experience](./Ollama.md) details some of my experience running Ollama using Docker and the technical implementation steps.  
 
 The following are references I had used:  
 [Ollama](https://ollama.ai/)  
