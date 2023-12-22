@@ -16,6 +16,10 @@ sudo apt-get install -y nvidia-container-toolkit
 # sudo nvidia-ctk runtime configure --runtime=docker
 # sudo systemctl restart docker
 ```
+
+#############
+## START HERE
+#############
 ## Run the Ollama Server in a Docker Container
 ```
 # docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
@@ -27,7 +31,7 @@ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --env-file=$OLLA
 ## User-Interfaces to utilize the LLM
 
 ### CLI interface
-You can run your prompt in the ollam container itself
+You can run your prompt in an ollama container itself
 ```
 docker exec -it ollama ollama run llama2
 ```
