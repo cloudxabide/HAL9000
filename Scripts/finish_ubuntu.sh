@@ -54,7 +54,6 @@ do
   [ ! -f /etc/sudoers.d/$USER-nopasswd-all ] && echo "$USER ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER-nopasswd-all
 done
 
-
 # Install Chrome
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 echo "deb https://dl.google.com/linux/chrome/deb/ stable main" | sudo tee /etc/apt/sources.list.d/google.list
@@ -104,6 +103,10 @@ done
 # Update GRUB menu
 wget -O - https://github.com/shvchk/fallout-grub-theme/raw/master/install.sh | sudo bash -
 
+##################
+## NVIDIA STUFF
+##################
+# https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/1.14.3/install-guide.html
 # CUDA / Docker stuff
 ## First - remove existing NVIDIA bits
 sudo apt autoremove -y nvidia* --purge
