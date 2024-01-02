@@ -2,30 +2,33 @@
 
 These days, when I am trying to learn something, I find myself trending towards using containers rather than building a VM (or Baremetal in this case) and then installing "bits" in a VM.
 
-## Install Supporting Bits (NVIDIA)
-```
-curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey \
-    | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg
-curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list \
-    | sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' \
-    | sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
-sudo apt-get update
-sudo apt-get install -y nvidia-container-toolkit
+## Assumptions
 
-# I don't believe this is necessary
-# sudo nvidia-ctk runtime configure --runtime=docker
-# sudo systemctl restart docker
+I cover these in other files/scripts in this repo:
+
+* NVIDIA Drivers are already installed and functioning
+
+## Clean up 
+
+### Kill/Remove the pods
+NOTE: This will kill and rm **ALL** containers on your node. (which is fine for me - as this will be the only thing I am working on)
+```
+docker kill $(docker ps -a | grep ollama | awk '{ print $1 }' | grep -v CONTAINER)
+docker rm $(docker ps -a | grep ollama | awk '{ print $1 }' | grep -v CONTAINER)
 ```
 
-#############
-## START HERE
-#############
 ## Run the Ollama Server in a Docker Container
 ```
 # docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 OLLAMA_ENV_FILE=${HOME}/ollama-env-file.txt
 echo "OLLAMA_ORIGINS=\"http://10.10.10.20:*,http://hal9000.matrix.lab:*\"" > $OLLAMA_ENV_FILE
 docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --env-file=$OLLAMA_ENV_FILE --name ollama ollama/ollama
+```
+
+## Monitor the system
+In a separate terminal, run the following
+```
+nvidia-smi -l 1
 ```
 
 ## User-Interfaces to utilize the LLM
@@ -42,6 +45,7 @@ Source: https://github.com/ollama-webui/ollama-webui
 # docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
 ## Ubuntu
 docker run -d -p 3000:8080 --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
+google-chrome http://localhost:3000/
 # MacOS 
 docker run -it --platform linux/amd64 -d -p 3000:8080 -e OLLAMA_API_BASE_URL=http://10.10.10.20:11434/api --name ollama-webui --restart always ghcr.io/ollama-webui/ollama-webui:main
 ```
