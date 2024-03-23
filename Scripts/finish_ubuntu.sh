@@ -113,7 +113,7 @@ sudo apt autoremove -y nvidia* --purge
 sudo /usr/bin/nvidia-uninstall
 
 ubuntu-drivers devices
-apt install -y nvidia-driver-535 && shutdown now -r
+sudo apt install -y nvidia-driver-535 && sudo shutdown now -r
 
 lspci | egrep -i 'vga|3d|display'
 lsmod | grep nvidia

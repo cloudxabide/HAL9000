@@ -1,0 +1,64 @@
+# nvidia-smi Output (container)
+
+```
+docker run --rm --gpus all nvidia/cuda:12.0.0-base-ubuntu22.04 nvidia-smi
+Unable to find image 'nvidia/cuda:12.0.0-base-ubuntu22.04' locally
+12.0.0-base-ubuntu22.04: Pulling from nvidia/cuda
+aece8493d397: Pull complete
+cb5efdcf30fe: Pull complete
+6c0deaabac71: Pull complete
+56cb4663b3f5: Pull complete
+0a0d0d55d972: Pull complete
+Digest: sha256:4e9da312e1f5affc0ab1b2cb3f1141e163849dcd850d66fe315138e82e85427d
+Status: Downloaded newer image for nvidia/cuda:12.0.0-base-ubuntu22.04
+Sat Mar 23 13:17:03 2024
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce GTX 970         Off | 00000000:13:00.0 Off |                  N/A |
+| 75%   23C    P0              44W / 250W |      0MiB /  4096MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+```
+docker run --rm --gpus all nvidia/cuda:12.0.0-base-ubuntu22.04 nvidia-smi
+Unable to find image 'nvidia/cuda:12.0.0-base-ubuntu22.04' locally
+12.0.0-base-ubuntu22.04: Pulling from nvidia/cuda
+aece8493d397: Pull complete
+cb5efdcf30fe: Pull complete
+6c0deaabac71: Pull complete
+56cb4663b3f5: Pull complete
+0a0d0d55d972: Pull complete
+Digest: sha256:4e9da312e1f5affc0ab1b2cb3f1141e163849dcd850d66fe315138e82e85427d
+Status: Downloaded newer image for nvidia/cuda:12.0.0-base-ubuntu22.04
+Sat Mar 23 13:17:03 2024
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA GeForce GTX 970         Off | 00000000:13:00.0 Off |                  N/A |
+| 75%   23C    P0              44W / 250W |      0MiB /  4096MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
