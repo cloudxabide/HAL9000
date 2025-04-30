@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Purpose:  a script that runs commands I would often have to run to invoke LLMs on my local machine
  
 # Set default model name
 MODEL_NAME="llama3"
@@ -23,18 +25,23 @@ $0 [-k|--kill]
 # Handle container termination and removal 
 kill() {
     echo "Stop and remove existing containers"
+    echo "Stopping..."
     docker stop ollama open-webui 2>/dev/null
+    echo "Removing..."
     docker rm ollama open-webui 2>/dev/null
     echo "Exiting program"
     exit 0
 }
 
 start() {
-# Run Ollama container
-docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+echo "Starting Ollama and Open-WebUI containers"
 
-# Run the specified model
-docker exec -it ollama ollama run "$MODEL_NAME"
+# Run Ollama container
+docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama && echo "Ollama started" || echo "Error: Ollama did not start"
+
+# Run the specified model (this is only necessary if you want to run from CLI)
+# docker exec -it ollama ollama run "$MODEL_NAME" && echo "$MODEL_NAME has bee added."
+# docker exec -it ollama ollama run qwen:4b
 
 # Run Open WebUI container
 docker run --detach \
@@ -43,7 +50,9 @@ docker run --detach \
   --volume open-webui:/app/backend/data \
   --name open-webui \
   --restart always \
-  ghcr.io/open-webui/open-webui:main
+  ghcr.io/open-webui/open-webui:main && echo "Open-WebUI started" || echo "Error: Open-WebUI did not start."
+
+while sleep 2; do echo "Waiting for Open-WebUI to start" ; docker ps -a | grep "(healthy)" && break; done
 }
 
 # Parse command-line arguments
@@ -64,7 +73,10 @@ while [[ $# -gt 0 ]]; do
             usage
             ;;
         -s|--status)
-            docker ps -a | grep ollama
+            clear
+            docker ps -a | egrep '^CONTAINER|ollama|open-webui'
+            echo ""
+            nvidia-smi
             shift
             exit 0
             ;;
