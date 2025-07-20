@@ -50,7 +50,7 @@ docker run --detach \
   --volume open-webui:/app/backend/data \
   --name open-webui \
   --restart always \
-  ghcr.io/open-webui/open-webui:main && echo "Open-WebUI started" || echo "Error: Open-WebUI did not start."
+  ghcr.io/open-webui/open-webui:main && echo "Open-WebUI container start initiated." || echo "Error: Open-WebUI did not start."
 
 while sleep 2; do echo "Waiting for Open-WebUI to start" ; docker ps -a | grep "(healthy)" && break; done
 }
