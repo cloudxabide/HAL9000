@@ -1,0 +1,342 @@
+Start time: Sat Nov 29 21:13:44 EST 2025
+Results will be saved to: ./ollama_test_results/results_20251129_211344.csv
+
+[0;36mChecking Ollama service on Mac (192.168.0.218)...[0m
+[0;32m✓ Ollama service is running on Mac[0m
+
+[0;36mAvailable models on Mac:[0m
+  - qwen3-coder:30b
+  - gpt-oss:20b
+  - tinyllama:latest
+  - llama3.1:8b
+  - llama3.1:latest
+  - qwen:latest
+
+[0;36mChecking Ollama service on PC (10.10.12.252)...[0m
+[0;32m✓ Ollama service is running on PC[0m
+
+[0;36mAvailable models on PC:[0m
+  - gemma3:1b
+  - gemma3:4b
+  - qwen3-vl:2b
+  - qwen3-vl:4b
+  - llama2:latest
+[0;36mChecking if model qwen:latest is available on 192.168.0.218...[0m
+[0;32m✓ Model qwen:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | qwen:latest | code[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m3.100767000s[0m
+  Total tokens: [1;33m177[0m
+  Tokens/sec: [1;33m93.15[0m
+  Response preview: Here's an example of how you can implement this function in Python:  ```python def fibonacci(n):    ...
+[0;36mChecking if model qwen:latest is available on 10.10.12.252...[0m
+[1;33m⚠ Model qwen:latest not found on 10.10.12.252[0m
+[0;36mChecking if model qwen:latest is available on 192.168.0.218...[0m
+[0;32m✓ Model qwen:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | qwen:latest | reasoning[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m3.094470000s[0m
+  Total tokens: [1;33m176[0m
+  Tokens/sec: [1;33m92.72[0m
+  Response preview: Recursion is a method of solving problems by breaking them down into smaller, more manageable sub-pr...
+[0;36mChecking if model qwen:latest is available on 10.10.12.252...[0m
+[1;33m⚠ Model qwen:latest not found on 10.10.12.252[0m
+[0;36mChecking if model qwen:latest is available on 192.168.0.218...[0m
+[0;32m✓ Model qwen:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | qwen:latest | math[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m3.676791000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m93.26[0m
+  Response preview: To calculate the total time for the journey, we need to break down the journey into smaller steps.  ...
+[0;36mChecking if model qwen:latest is available on 10.10.12.252...[0m
+[1;33m⚠ Model qwen:latest not found on 10.10.12.252[0m
+[0;36mChecking if model qwen:latest is available on 192.168.0.218...[0m
+[0;32m✓ Model qwen:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | qwen:latest | creative[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m.488989000s[0m
+  Total tokens: [1;33m15[0m
+  Tokens/sec: [1;33m95.87[0m
+  Response preview: Artificial mind, Cloud computes data, Minds merge in AI....
+[0;36mChecking if model qwen:latest is available on 10.10.12.252...[0m
+[1;33m⚠ Model qwen:latest not found on 10.10.12.252[0m
+[0;36mChecking if model tinyllama:latest is available on 192.168.0.218...[0m
+[0;32m✓ Model tinyllama:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | tinyllama:latest | code[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m1.352763000s[0m
+  Total tokens: [1;33m182[0m
+  Tokens/sec: [1;33m226.51[0m
+  Response preview: Def fib_dyn_dp(n):     """Calculates the Fibonaci sequence up to n terms using dynamic programming."...
+[0;36mChecking if model tinyllama:latest is available on 10.10.12.252...[0m
+[1;33m⚠ Model tinyllama:latest not found on 10.10.12.252[0m
+[0;36mChecking if model tinyllama:latest is available on 192.168.0.218...[0m
+[0;32m✓ Model tinyllama:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | tinyllama:latest | reasoning[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m1.262858000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m226.18[0m
+  Response preview: Recursion is a mathematical concept in which an algorithm repeats itself to solve a problem recursiv...
+[0;36mChecking if model tinyllama:latest is available on 10.10.12.252...[0m
+[1;33m⚠ Model tinyllama:latest not found on 10.10.12.252[0m
+[0;36mChecking if model tinyllama:latest is available on 192.168.0.218...[0m
+[0;32m✓ Model tinyllama:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | tinyllama:latest | math[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m1.173748000s[0m
+  Total tokens: [1;33m172[0m
+  Tokens/sec: [1;33m226.6[0m
+  Response preview: To solve this problem step-by-step, let's assume that the train travels at a constant speed of 80 ki...
+[0;36mChecking if model tinyllama:latest is available on 10.10.12.252...[0m
+[1;33m⚠ Model tinyllama:latest not found on 10.10.12.252[0m
+[0;36mChecking if model tinyllama:latest is available on 192.168.0.218...[0m
+[0;32m✓ Model tinyllama:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | tinyllama:latest | creative[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m.433366000s[0m
+  Total tokens: [1;33m54[0m
+  Tokens/sec: [1;33m228.52[0m
+  Response preview: Invisible wings, lightning-fast fingers, Clouds of AI, sparkling with wondrous deals. AI's power to ...
+[0;36mChecking if model tinyllama:latest is available on 10.10.12.252...[0m
+[1;33m⚠ Model tinyllama:latest not found on 10.10.12.252[0m
+[0;36mChecking if model llama3.1:8b is available on 192.168.0.218...[0m
+[0;32m✓ Model llama3.1:8b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | llama3.1:8b | code[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m4.345347000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m63.17[0m
+  Response preview: **Fibonacci Sequence using Dynamic Programming** ===================================================...
+[0;36mChecking if model llama3.1:8b is available on 10.10.12.252...[0m
+[1;33m⚠ Model llama3.1:8b not found on 10.10.12.252[0m
+[0;36mChecking if model llama3.1:8b is available on 192.168.0.218...[0m
+[0;32m✓ Model llama3.1:8b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | llama3.1:8b | reasoning[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m4.446393000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m62.91[0m
+  Response preview: **What is Recursion?**  Recursion is a programming technique where a function calls itself repeatedl...
+[0;36mChecking if model llama3.1:8b is available on 10.10.12.252...[0m
+[1;33m⚠ Model llama3.1:8b not found on 10.10.12.252[0m
+[0;36mChecking if model llama3.1:8b is available on 192.168.0.218...[0m
+[0;32m✓ Model llama3.1:8b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | llama3.1:8b | math[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m4.472180000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m62.7[0m
+  Response preview: Let's break down the solution step by step:  **Step 1: Calculate the speed of the train**  The train...
+[0;36mChecking if model llama3.1:8b is available on 10.10.12.252...[0m
+[1;33m⚠ Model llama3.1:8b not found on 10.10.12.252[0m
+[0;36mChecking if model llama3.1:8b is available on 192.168.0.218...[0m
+[0;32m✓ Model llama3.1:8b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: Mac | llama3.1:8b | creative[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m.933209000s[0m
+  Total tokens: [1;33m29[0m
+  Tokens/sec: [1;33m64.91[0m
+  Response preview: Here is a haiku about AI and cloud computing:  Silicon whispers Clouds store secrets, AI awakes  Fut...
+[0;36mChecking if model llama3.1:8b is available on 10.10.12.252...[0m
+[1;33m⚠ Model llama3.1:8b not found on 10.10.12.252[0m
+[0;36mChecking if model gemma3:1b is available on 192.168.0.218...[0m
+[1;33m⚠ Model gemma3:1b not found on 192.168.0.218[0m
+[0;36mChecking if model gemma3:1b is available on 10.10.12.252...[0m
+[0;32m✓ Model gemma3:1b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | gemma3:1b | code[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m1.923380000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m123.49[0m
+  Response preview: ```python def fibonacci_dynamic(n):   """   Calculates the Fibonacci sequence up to n terms using dy...
+[0;36mChecking if model gemma3:1b is available on 192.168.0.218...[0m
+[1;33m⚠ Model gemma3:1b not found on 192.168.0.218[0m
+[0;36mChecking if model gemma3:1b is available on 10.10.12.252...[0m
+[0;32m✓ Model gemma3:1b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | gemma3:1b | reasoning[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m1.917818000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m124.49[0m
+  Response preview: Okay, let's break down recursion.  **What is Recursion?**  Recursion is a programming technique wher...
+[0;36mChecking if model gemma3:1b is available on 192.168.0.218...[0m
+[1;33m⚠ Model gemma3:1b not found on 192.168.0.218[0m
+[0;36mChecking if model gemma3:1b is available on 10.10.12.252...[0m
+[0;32m✓ Model gemma3:1b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | gemma3:1b | math[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m1.559536000s[0m
+  Total tokens: [1;33m157[0m
+  Tokens/sec: [1;33m120.88[0m
+  Response preview: Here's how to solve the problem step-by-step:  1. **Calculate speed:**    * Speed = Distance / Time ...
+[0;36mChecking if model gemma3:1b is available on 192.168.0.218...[0m
+[1;33m⚠ Model gemma3:1b not found on 192.168.0.218[0m
+[0;36mChecking if model gemma3:1b is available on 10.10.12.252...[0m
+[0;32m✓ Model gemma3:1b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | gemma3:1b | creative[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m.393604000s[0m
+  Total tokens: [1;33m22[0m
+  Tokens/sec: [1;33m109.3[0m
+  Response preview: Code flows, vast and deep, Data clouds, a thinking mind, Future takes its form....
+[0;36mChecking if model gemma3:4b is available on 192.168.0.218...[0m
+[1;33m⚠ Model gemma3:4b not found on 192.168.0.218[0m
+[0;36mChecking if model gemma3:4b is available on 10.10.12.252...[0m
+[0;32m✓ Model gemma3:4b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | gemma3:4b | code[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m7.588288000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m37.43[0m
+  Response preview: ```python def fibonacci_dynamic(n):   """   Calculates the Fibonacci sequence up to n terms using dy...
+[0;36mChecking if model gemma3:4b is available on 192.168.0.218...[0m
+[1;33m⚠ Model gemma3:4b not found on 192.168.0.218[0m
+[0;36mChecking if model gemma3:4b is available on 10.10.12.252...[0m
+[0;32m✓ Model gemma3:4b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | gemma3:4b | reasoning[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m5.726951000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m37.23[0m
+  Response preview: Okay, let's break down recursion and then look at a helpful analogy.  **What is Recursion?**  At its...
+[0;36mChecking if model gemma3:4b is available on 192.168.0.218...[0m
+[1;33m⚠ Model gemma3:4b not found on 192.168.0.218[0m
+[0;36mChecking if model gemma3:4b is available on 10.10.12.252...[0m
+[0;32m✓ Model gemma3:4b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | gemma3:4b | math[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m5.681841000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m37.53[0m
+  Response preview: Here's how to solve the problem step-by-step:  **Step 1: Calculate the train's speed.**  * Speed = D...
+[0;36mChecking if model gemma3:4b is available on 192.168.0.218...[0m
+[1;33m⚠ Model gemma3:4b not found on 192.168.0.218[0m
+[0;36mChecking if model gemma3:4b is available on 10.10.12.252...[0m
+[0;32m✓ Model gemma3:4b found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | gemma3:4b | creative[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m.892002000s[0m
+  Total tokens: [1;33m23[0m
+  Tokens/sec: [1;33m36.98[0m
+  Response preview: Data flows so free, Cloud minds learn, a silent hum, Future's code takes hold....
+[0;36mChecking if model llama2:latest is available on 192.168.0.218...[0m
+[1;33m⚠ Model llama2:latest not found on 192.168.0.218[0m
+[0;36mChecking if model llama2:latest is available on 10.10.12.252...[0m
+[0;32m✓ Model llama2:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | llama2:latest | code[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m11.887513000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m19.52[0m
+  Response preview: ``` def fibonacci(n):     if n <= 1:         return n     else:         return fibonacci(n-1) + fibo...
+[0;36mChecking if model llama2:latest is available on 192.168.0.218...[0m
+[1;33m⚠ Model llama2:latest not found on 192.168.0.218[0m
+[0;36mChecking if model llama2:latest is available on 10.10.12.252...[0m
+[0;32m✓ Model llama2:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | llama2:latest | reasoning[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m11.073637000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m19.17[0m
+  Response preview:  Recursion is a fundamental concept in computer science that refers to the process of calling a func...
+[0;36mChecking if model llama2:latest is available on 192.168.0.218...[0m
+[1;33m⚠ Model llama2:latest not found on 192.168.0.218[0m
+[0;36mChecking if model llama2:latest is available on 10.10.12.252...[0m
+[0;32m✓ Model llama2:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | llama2:latest | math[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m10.926380000s[0m
+  Total tokens: [1;33m200[0m
+  Tokens/sec: [1;33m19.12[0m
+  Response preview:  To solve this problem, we need to break it down into smaller parts and calculate the time for each ...
+[0;36mChecking if model llama2:latest is available on 192.168.0.218...[0m
+[1;33m⚠ Model llama2:latest not found on 192.168.0.218[0m
+[0;36mChecking if model llama2:latest is available on 10.10.12.252...[0m
+[0;32m✓ Model llama2:latest found[0m
+
+[0;34m========================================[0m
+[0;34mTesting: PC | llama2:latest | creative[0m
+[0;34m========================================[0m
+[0;32m✓ Test completed successfully[0m
+  Response time: [1;33m1.332474000s[0m
+  Total tokens: [1;33m20[0m
+  Tokens/sec: [1;33m21.01[0m
+  Response preview:  Clouds gather might Intelligence awakens anew AI soars on wings...
+Total tests: [1;33m24[0m
+Successful: [0;32m24[0m
+Failed: [0;31m0[0m
+End time: Sat Nov 29 21:16:06 EST 2025
+
+Results saved to: [0;36m./ollama_test_results/results_20251129_211344.csv[0m
+Log saved to: [0;36m./ollama_test_results/test_log_20251129_211344.log[0m

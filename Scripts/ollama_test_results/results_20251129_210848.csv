@@ -1,0 +1,16 @@
+Timestamp,Host,Model,Prompt_Type,Response_Time_Sec,Total_Tokens,Tokens_Per_Sec,Success
+2025-11-29_21:08:52,Mac,qwen:latest,code,3.795201000,0,0,SUCCESS
+2025-11-29_21:08:56,Mac,qwen:latest,reasoning,2.419630000,0,0,SUCCESS
+2025-11-29_21:09:02,Mac,qwen:latest,math,3.453984000,0,0,SUCCESS
+2025-11-29_21:09:05,Mac,qwen:latest,creative,.575099000,0,0,SUCCESS
+2025-11-29_21:09:08,Mac,tinyllama:latest,code,1.234984000,0,0,SUCCESS
+2025-11-29_21:09:12,Mac,tinyllama:latest,reasoning,1.326661000,0,0,SUCCESS
+2025-11-29_21:09:15,Mac,tinyllama:latest,math,1.238311000,0,0,SUCCESS
+2025-11-29_21:09:18,Mac,tinyllama:latest,creative,.386502000,0,0,SUCCESS
+2025-11-29_21:09:26,Mac,llama3.1:8b,code,6.155230000,0,0,SUCCESS
+2025-11-29_21:09:32,Mac,llama3.1:8b,reasoning,4.409696000,0,0,SUCCESS
+2025-11-29_21:09:39,Mac,llama3.1:8b,math,4.375295000,0,0,SUCCESS
+2025-11-29_21:09:42,Mac,llama3.1:8b,creative,.663849000,0,0,SUCCESS
+2025-11-29_21:09:48,PC,gemma3:1b,code,4.124678000,0,0,SUCCESS
+2025-11-29_21:09:52,PC,gemma3:1b,reasoning,1.888895000,0,0,SUCCESS
+2025-11-29_21:09:56,PC,gemma3:1b,math,1.879246000,0,0,SUCCESS
